@@ -1,0 +1,27 @@
+@import "modules/color";
+@import "modules/general";
+@import "modules/grid";
+@import "modules/typo";
+@import "modules/spacer";
+@import "modules/image";
+@import "modules/button";
+@import "modules/border";
+
+header{
+    padding: 1.5rem 0;
+    position: fixed;
+    top:0;
+    left: 0%;
+    right:0;
+    z-index: 99;
+    .navbar{
+        a{
+            color:  white;
+            padding: 10px 20px;
+            &hover{
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
