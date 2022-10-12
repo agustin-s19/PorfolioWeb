@@ -1,27 +1,27 @@
-@import "modules/color";
-@import "modules/general";
-@import "modules/grid";
-@import "modules/typo";
-@import "modules/spacer";
-@import "modules/image";
-@import "modules/button";
-@import "modules/border";
+@import './outils';
+@import './header';
+@import './Home';
 
-header{
-    padding: 1.5rem 0;
-    position: fixed;
-    top:0;
-    left: 0%;
-    right:0;
-    z-index: 99;
-    .navbar{
-        a{
-            color:  white;
-            padding: 10px 20px;
-            &hover{
-                background: white;
-                color: black;
-            }
-        }
-    }
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+body{
+    background: $color1;
+    color: set-color($color1);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    text-transform: capitalize;
+
+}
+
+.Portfolio, .Acerca, .Skills, .Contact{
+    display: none;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+}
+
+main{
+    height: 100%;
+    width: 100%;
 }
