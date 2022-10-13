@@ -1,5 +1,6 @@
 $color1: #272727;
 $color2: #0FFE00;
+$color3: #162186;
 
 *{
     margin: 0;
@@ -18,4 +19,24 @@ $color2: #0FFE00;
 a{
     color: set-color($color1);
     text-decoration: none;
+}
+
+@mixin media-md{
+    @media screen and (max-width:768px){
+
+        @content;
+    }
+}
+
+@mixin media-lg{
+    @media screen and (min-width:1024px){
+
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width:1600px){
+
+        @content;
+    }
 }

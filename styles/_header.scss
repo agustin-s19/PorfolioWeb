@@ -30,6 +30,43 @@ header{
         }
     }
     .menu-btn{
-        .button-resp{}
+        position: absolute;
+        z-index: 1;
+        right: 1rem;
+        top: 1rem;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        transition:  all 0.5s ease-in-out;
+        visibility: hidden;
+
+        .button-resp{
+            position: absolute;
+            top: 0.5s;
+            right: 0;
+            width: 28px;
+            height: 3px;
+            background: set-color($color1);
+            transition:  all 0.5s ease-in-out;
+            &::before{
+                content:''; 
+                position: absolute;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background: set-color($color1);
+                transition: all 0.5s ease-in-out;
+            }
+            &::after{
+                content:''; 
+                position: absolute;
+                top: 8px;
+                width: 28px;
+                height: 3px;
+                background: set-color($color1);
+                transition: all 0.5s ease-in-out;
+            }
+          
+        }
     }
 }
