@@ -13,57 +13,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Portfolio</title>
+    <title>Agustin Sabia Dev</title>
 </head>
 
 <body>
-    <header>
-        <nav class="nav-section" role="navigation">
-            <ul class="menu-nav">
-                <li class="menu-nav_item">
-                    <a href="#" data-section="section1" title="Home" class="menu-nav_link active">Home</a>
-                </li>
-                <li class="menu-nav_item">
-                    <a href="#"  data-section="section2" title="Portfolio" class="menu-nav_link">Portfolio</a>
-                </li>
-                <li class="menu-nav_item">
-                    <a href="#"  data-section="section4" title="Skills" class="menu-nav_link">Tecnologias</a>
-                </li>
-                <li class="menu-nav_item">
-                    <a href="#" data-section="section5"  title="Contact" section="section5" class="menu-nav_link">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="menu-btn">
-            <span class="button-resp"></span>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Agustin Sabia</span>, Desarrollador</h2>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eum, sint tempore temporibus, soluta facere dolores quibusdam commodi expedita beatae consectetur debitis. Nisi impedit fugiat perspiciatis, consequuntur obcaecati reiciendis aspernatur.</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
         </div>
-    </header>
-    <main class="content-wrapper" id="content">
-        <section class="section Home" id="section1">
-           
-            <h2> Soy</h2>
-            <h1 class="Home-name">Agustin <span class="Home-name_last">Sabia</span></h1>
-            <h2>Desarrollador</h2>
-            
-            
-        </section>
-        <section class="section Portfolio" id="section2">
-       
-            <video autoplay class="back-video">
-                <source src="../video.mp4" type="video/mp4">
-            </video>
-       
-        </section>
-        <section class="section Acerca de mí" id="section3">
-            test3
-        </section>
-        <section class="section Skills" id="section4">
-            test4
-        </section>
-        <section class="section Contact" id="section5">
-            test5
-        </section>
-    </main>
+    </section>
 </body>
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
