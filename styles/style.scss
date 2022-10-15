@@ -1,129 +1,47 @@
 @import './outils';
 // @import './header';
-// @import './Home';
+@import './Home';
 // @import './responsive';
-// @import './portfolio';
+@import './portfolio';
 // @import './Skills';
 @import url('https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
 
-// body{
-//     background: $color1;
-//     color: set-color($color1);
-//     font-family: 'Poppins', sans-serif;
-//     height: 100vh;
-//     text-transform: capitalize;
-
-// }
 
 html{
     scroll-behavior: smooth;
 }
-/// Home
 
-#inicio{
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pond5.com/blue-programming-code-background-abstract-footage-090894338_prevstill.jpeg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
-//HEADER
-#inicio .contenido header{
-    background-color: (rgba(0,0,0,.5));
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+
+}
+.slider .slide{
+    width: 200px;
+    
+}
+
+.slider .slide img{
     width: 100%;
-    z-index: 100;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-   
-}
-
-#inicio .contenido header .contenido-header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-   
-}
-
-#inicio .contenido header .contenido-header nav ul{
-    list-style: none;
-    display: flex;
-    align-items: right;
-    padding-top:10px ;
-}
-#inicio .contenido header .contenido-header nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    margin: 0 12px;
-    font-weight: 400;
-    transition: .5s;
-    
+    padding:15px;
     
 }
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }100%{
+         -webkit-transform: translateX(calc(-200px * 7));
+         transform: translateX(calc(-200px * 7));
 
-#inicio .contenido header .contenido-header nav ul a:hover{
-    color: $color2;
-}
-#inicio .contenido .presentacion{
-    max-width: 1100px;
-    height: 100vh;
-    margin: auto;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#inicio .contenido .presentacion .bienvenida{
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-#inicio .contenido .presentacion h2{
-    font-size: 35px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-#inicio .contenido .presentacion h2 span{
-    font-size: 55px;
-    color: $color2;
-}
-#inicio .contenido .presentacion .description{
-    max-width: 700px;
-    margin: 25px auto;
-    font-size: 18px;
-    text-align: center;
-}
-
-#inicio .contenido .presentacion a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 25px;
-    padding: 20px 25px;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: .5s;
-
-}
-#inicio .contenido .presentacion a:hover{
-    background-color: $color2;
-}
-#icono-nav{
-    color: #fff;
-    display: none;
-}
-#inicio .contenido .contenido-header .logo{
-    display: flex;
-    
-
+    }
 }
