@@ -24,7 +24,7 @@ html {
 }
 
 #inicio .contenido header {
-  background-color: #272727;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   z-index: 100;
   top: 0;
@@ -46,6 +46,7 @@ html {
   list-style: none;
   display: flex;
   align-items: right;
+  padding-top: 10px;
 }
 
 #inicio .contenido header .contenido-header nav ul li a {
@@ -60,15 +61,66 @@ html {
   color: #0FFE00;
 }
 
-#inicip .contenido .presentacion {
+#inicio .contenido .presentacion {
   max-width: 1100px;
   height: 100vh;
   margin: auto;
-  columns: #fff;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+  font-size: 55px;
+  color: #0FFE00;
+}
+
+#inicio .contenido .presentacion .description {
+  max-width: 700px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 25px;
+  padding: 20px 25px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+  background-color: #0FFE00;
+}
+
+#icono-nav {
+  color: #fff;
+  display: none;
+}
+
+#inicio .contenido .contenido-header .logo {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
