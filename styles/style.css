@@ -20,8 +20,9 @@ a {
 }
 
 #inicio .contenido header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.99);
   width: 100%;
+  position: fixed;
   z-index: 100;
   top: 0;
   justify-content: center;
@@ -119,6 +120,60 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 760px) {
+  nav {
+    display: none;
+  }
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 44.49px;
+    left: 0;
+    padding: 10px 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+  #icono-nav {
+    display: block;
+    margin-left: auto;
+  }
+  #inicio .contenido .presentaacion h2 {
+    font-size: 40px;
+  }
+  #portfolio {
+    display: block;
+  }
+  #portfolio .portfolio .sobremi {
+    text-align: center;
+  }
+  #portfolio .portfolio h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  video {
+    display: none;
+  }
+  #tecnologias {
+    margin-top: 150%;
+  }
+  #contacto {
+    padding: 50px 15px;
+  }
+  #contacto .contenedor-form .mitad {
+    margin-bottom: 15px;
+    display: block;
+  }
+  #contacto .contenedor-form .mitad input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 #portfolio {
   width: 100%;
   height: 100%;
@@ -126,6 +181,9 @@ a {
 
 video {
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
   z-index: -1;
   background-size: cover;
 }
@@ -149,6 +207,7 @@ video {
   text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
+  margin-top: 100px;
 }
 
 #portfolio .portfolio h2 {
@@ -297,13 +356,6 @@ img:hover {
 
 #contacto .titulo-seccion {
   margin-bottom: 20px;
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
 }
 
 #contacto .contenedor-form {
@@ -336,14 +388,22 @@ img:hover {
   width: 100%;
 }
 
+#contacto .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
 #contacto .btn-enviar {
   display: block;
   margin: auto;
   cursor: pointer;
   transition: 0.5s;
-  padding: 10px 15px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 10px 15px !important;
 }
 
 #contacto .btn-enviar:hover {

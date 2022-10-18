@@ -1,40 +1,22 @@
-//Script para ir hacia cierta seccion
-$('.menu-nav_link').on('click',function(e){
-    e.preventDefault();
-    var sectionID = '#'+ $(this).data('section');
-    $('#content section:visible').fadeOut();
-    $(sectionID).fadeIn();
-});
+function seleccionar(link){
+    var opciones = document.querySelectorAll('#links a');
+    opciones[0].className = "";
+    opciones[4].className = "";
+    opciones[2].className = "";
+    opciones[3].className = "";
+    link.className = "seleccionado";
 
+    var x= document.getElementById("nav");
+    x.className = "";
 
-//menu-bttn responsive
+}
 
-const menBtn = document.querySelector('.menu-btn'); 
-const btn = document.querySelector('.button-resp'); 
-const nav = document.querySelector('.nav-section'); 
-const menunav = document.querySelector('.menu-nav'); 
-const items = document.querySelectorAll('.menu-nav_item'); 
-
-
-let showmenu = false ; 
-
-menBtn.addEventListener('click' , toggleMenu);
-
-function toggleMenu(){
-    if(!showmenu){
-        btn.classList.add('open'); 
-        nav.classList.add('open'); 
-        menunav.classList.add('open'); 
-        items.forEach(item => item.classList.add('open'));
-         
-
-        showmenu = true; 
-    } else { 
-        btn.classList.remove('open'); 
-        nav.classList.remove('open'); 
-        menunav.classList.remove('open'); 
-        items.forEach(item => item.classList.remove('open')); 
-
-        showmenu = false; 
+function responsiveMenu(){
+    var x = document.getElementById("nav");
+    if(x.className === ""){
+        x.className = "responsive";
+        
+    }else{
+        x.className ="";
     }
 }

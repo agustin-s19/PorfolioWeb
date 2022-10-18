@@ -1,57 +1,122 @@
-@include media-md{
-    nav{
-        visibility: hidden;
-        justify-content: center;
-        background: $color3;
-        position: fixed;
-        height: 100%;
-        overflow: hidden;
+// @include media-md{
+//     nav{
+//         visibility: hidden;
+//         justify-content: center;
+//         background: $color3;
+//         position: fixed;
+//         height: 100%;
+//         overflow: hidden;
         
-            .menu-nav{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                list-style-type: none;
-                overflow: hidden;
+//             .menu-nav{
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 100%;
+//                 list-style-type: none;
+//                 overflow: hidden;
                 
-                transform: translateY(-100%);
-                &.open{
-                    transform: translateY(0);
-                }
-                &_item{
-                    padding: 1rem 0;
-                    transform: translateX(100vw);
-                    &.open{
-                        transform: translateX(0);
+//                 transform: translateY(-100%);
+//                 &.open{
+//                     transform: translateY(0);
+//                 }
+//                 &_item{
+//                     padding: 1rem 0;
+//                     transform: translateX(100vw);
+//                     &.open{
+//                         transform: translateX(0);
                        
-                    }
-                }
-            }
-                &.open{
-                    visibility: visible;
-                    overflow: scroll;
+//                     }
+//                 }
+//             }
+//                 &.open{
+//                     visibility: visible;
+//                     overflow: scroll;
                    
-                }
-            }
+//                 }
+//             }
         
    
 
-    .menu-btn{
-        visibility: visible!important;
+//     .menu-btn{
+//         visibility: visible!important;
 
-        .button-resp{
-            &.open{
+//         .button-resp{
+//             &.open{
                
-                background: transparent;
-                &::before{
-                    transform: rotate(45deg) translate(5px , 8px);
-                }
-                &::after {
-                    transform: rotate(-45deg) translate(3px ,-7px);
+//                 background: transparent;
+//                 &::before{
+//                     transform: rotate(45deg) translate(5px , 8px);
+//                 }
+//                 &::after {
+//                     transform: rotate(-45deg) translate(3px ,-7px);
                     
-                }
-            }
-        }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width:760px){
+    nav{
+        display: none;
     }
+    nav.responsive{
+        display: block;
+        background-color: rgba(0,0,0 , .8);
+        width: 100%;
+        position: absolute;
+        top: 44.49px;
+        left: 0;
+        padding:10px 0;
+        
+      
+    }
+    nav.responsive ul{
+        display: block !important;
+        
+       
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+       
+    }
+    #icono-nav{
+        display: block;
+        margin-left: auto;
+        
+    }
+  
+    #inicio .contenido .presentaacion h2{
+        font-size: 40px;
+    }
+    #portfolio{
+        display: block;
+    }
+    #portfolio .portfolio .sobremi{
+        text-align: center;
+    }
+    #portfolio .portfolio h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+   video{
+    display: none;
+   }
+   #tecnologias{
+    margin-top: 150%;
+   }
+   #contacto{
+    padding: 50px 15px;
+   }
+
+   #contacto .contenedor-form .mitad{
+    margin-bottom: 15px;
+    display: block;
+   }
+
+   #contacto .contenedor-form .mitad input{
+    width: 100%;
+    margin-bottom: 15px;
+   }
 }
