@@ -27,7 +27,7 @@
                     <nav id="nav" class="">
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#sobremi">SOBRE MÍ</a></li>
                             <li><a href="#tecnologias">TECNOLOGIAS</a></li>
                             <li><a href="#contacto">CONTACTO</a></li>
                         </ul>
@@ -45,27 +45,33 @@
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Agustin Sabia</span>, Desarrollador</h2>
                 <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eum, sint tempore temporibus, soluta facere dolores quibusdam commodi expedita beatae consectetur debitis. Nisi impedit fugiat perspiciatis, consequuntur obcaecati reiciendis aspernatur.</p>
-                <a href="#portfolio">Ir a Portafolio</a>
+                <a href="#sobremi">CONOCEMÉ</a>
             </div>
         </div>
     </section>
 
       <!-- SECCION S O B R E M I -->
+    
     <section id="sobremi">
+     
         <div class="contenedor-foto">
             <img src="./styles/images/photo.png" class="mifoto" >
         </div>
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mí</p>
-            <h2>Hola, soy <span>Agustin Sabia</span></h2>
+            <h2 class="pres">Hola, soy <span>Agustin Sabia</span></h2>
             <h3>Desarrollador</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nesciunt eos suscipit commodi, sed sequi at neque veniam cum labore facere quasi. Perspiciatis iusto suscipit perferendis, mollitia ratione dolor velit.</p>
-            <p>Lorem ipsum, dolor sit amet</p>
-            <a href="#">Descargar CV</a>
-        </div>
+            <p>Soy una persona apasionada por el mundo de los videojuegos y su actualidad, he desempeñado el rol de Gaming QA y he tenido la oportunidad de participar de Game Jams como desarrollador. 
+                </p>
+            <p>Actualmente me he encuentro perfeccionandome en el área de programacion web, como tambien desarrollo de videojuegos en Unity y Game Design</p>
+            <a download="CV Agustin Sabia" href="Agustin_Sabia_CV.pdf">Descargar CV</a>
+        
+       
+        </div>      
 
-    <!-- <video src="./styles/video.mp4" autoplay loop muted></video> -->
+        <video src="./styles/vid.mp4" autoplay loop muted></video>
     </section>
+    
     <section id="tecnologias">
         <h3 class="titulo-seccion">STACK TECNOLOGICO</h3>
         <section class="stack">
@@ -121,16 +127,16 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="https://formsubmit.co/el/agustin_sabia@hotmail.com" method="POST">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" required>
+                    <input type="email" placeholder="Email" class="input-mitad" required>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" placeholder="Tema..." class="input-full" required>
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
                 </div>
 
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
@@ -142,9 +148,9 @@
     <footer>
         <p>Todos los derechos reservados - 2022</p>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://github.com/agustin-s19" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/agustin-sabia-103779186/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://asabia.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
         </div>
 
     </footer>

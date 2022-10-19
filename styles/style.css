@@ -70,10 +70,11 @@ a {
 }
 
 #inicio .contenido .presentacion .bienvenida {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-weight: bold;
 }
 
 #inicio .contenido .presentacion h2 {
@@ -120,7 +121,7 @@ a {
   display: flex;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 890px) {
   nav {
     display: none;
   }
@@ -147,20 +148,39 @@ a {
     font-size: 40px;
   }
   #sobremi {
-    display: block;
+    display: block !important;
+    padding: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
-  #sobremi .sobremi {
+  #sobremi .contenedor-foto {
+    max-width: 200px;
+    margin: auto !important;
+  }
+  #sobremi .contenedor-foto .mifoto {
+    padding: 8px;
+  }
+  #sobremi .sobremi .titulo-seccion {
     text-align: center;
+    font-size: 18px;
+    margin-top: 1rem !important;
   }
-  #sobremi .sobremi h2 {
+  #sobremi .sobremi .pres {
     font-size: 25px;
     text-align: center;
   }
+  #sobremi .sobremi p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+  #sobremi .sobremi h3 {
+    text-align: center;
+  }
+  #sobremi .sobremi a {
+    margin: auto;
+  }
   video {
     display: none;
-  }
-  #tecnologias {
-    margin-top: 150%;
   }
   #contacto {
     padding: 50px 15px;
@@ -177,42 +197,53 @@ a {
 #sobremi {
   max-width: 1100px;
   margin: auto;
-  padding: 100px 15px;
-  color: #111135;
   display: flex;
+  padding: 0 15px 100px 0;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  z-index: -1;
+  position: absolute;
 }
 
 #sobremi .contenedor-foto {
-  max-width: 300px;
+  max-width: 400px;
   margin-right: 80px;
   box-sizing: border-box;
   overflow: hidden;
+  padding: 40px 20px 40px 30px;
 }
 
-.mifoto {
-  padding: 15px;
+#sobremi .contenedor-foto .mifoto {
+  padding: 20px;
   width: 100%;
-  height: 100%;
-  background-color: #8fe95b;
+  border-radius: 10px;
+  background-color: #f3f3f3;
   transition: all 0.3s ease-in-out;
-  object-fit: cover;
+  margin-top: 4rem;
 }
 
-.mifoto:hover {
-  transform: scale(1.4);
-  padding: 50px 45px;
-  border-radius: 200px;
+#sobremi .contenedor-foto .mifoto:hover {
+  transform: scale(1.09);
   transition: all 0.2s ease-in-out;
+}
+
+#sobremi .sobremi {
+  margin: 0 40px;
 }
 
 #sobremi .sobremi .titulo-seccion {
   font-size: 22px;
   text-transform: uppercase;
-  color: #111135;
+  color: #fff;
   text-decoration: underline;
-  text-decoration-color: #d3d3d3;
+  text-decoration-color: #000;
   text-decoration-thickness: 5px;
-  margin-top: 100px;
+  margin-top: 7rem;
 }
 
 #sobremi .sobremi h2 {
@@ -236,24 +267,25 @@ a {
 
 #sobremi .sobremi p {
   font-size: 14px;
+  text-transform: initial;
   line-height: 25px;
-  color: #000;
+  color: rgb(184, 200, 201);
   margin-bottom: 12px;
 }
 
 #sobremi .sobremi a {
   display: inline-block;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 30px;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   margin-top: 30px;
   transition: 0.5s;
 }
 
 #sobremi .sobremi a:hover {
-  background-color: #242424;
+  background-color: #000;
   color: #0FFE00;
 }
 
@@ -397,9 +429,9 @@ a {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
-  color: #111135;
+  color: #d3d3d3;
   text-decoration: underline;
-  text-decoration-color: #d3d3d3;
+  text-decoration-color: #000;
   text-decoration-thickness: 5px;
 }
 

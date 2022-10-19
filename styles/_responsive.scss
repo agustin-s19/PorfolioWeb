@@ -1,62 +1,6 @@
-// @include media-md{
-//     nav{
-//         visibility: hidden;
-//         justify-content: center;
-//         background: $color3;
-//         position: fixed;
-//         height: 100%;
-//         overflow: hidden;
-        
-//             .menu-nav{
-//                 flex-direction: column;
-//                 justify-content: center;
-//                 align-items: center;
-//                 width: 100%;
-//                 list-style-type: none;
-//                 overflow: hidden;
-                
-//                 transform: translateY(-100%);
-//                 &.open{
-//                     transform: translateY(0);
-//                 }
-//                 &_item{
-//                     padding: 1rem 0;
-//                     transform: translateX(100vw);
-//                     &.open{
-//                         transform: translateX(0);
-                       
-//                     }
-//                 }
-//             }
-//                 &.open{
-//                     visibility: visible;
-//                     overflow: scroll;
-                   
-//                 }
-//             }
-        
-   
+@media screen and (max-width:890px){
 
-//     .menu-btn{
-//         visibility: visible!important;
-
-//         .button-resp{
-//             &.open{
-               
-//                 background: transparent;
-//                 &::before{
-//                     transform: rotate(45deg) translate(5px , 8px);
-//                 }
-//                 &::after {
-//                     transform: rotate(-45deg) translate(3px ,-7px);
-                    
-//                 }
-//             }
-//         }
-//     }
-// }
-
-@media screen and (max-width:760px){
+    //NAV
     nav{
         display: none;
     }
@@ -85,27 +29,56 @@
         margin-left: auto;
         
     }
-  
+  //INICIO
+
     #inicio .contenido .presentacion h2{
         font-size: 40px;
     }
-    #sobremi{
-        display: block;
+
+    //SOBRE MÍ
+
+    #sobremi {
+        display: block!important;
+        padding: 50px;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7));
     }
-    #sobremi .sobremi{
+
+    #sobremi .contenedor-foto{
+       max-width: 200px;
+        margin: auto!important;
+    }
+    #sobremi .contenedor-foto .mifoto{
+        // object-fit: contain;
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{
         text-align: center;
+        font-size: 18px;
+        margin-top: 1rem!important;
     }
-    #sobremi .sobremi h2{
+
+    #sobremi .sobremi .pres{
         font-size: 25px;
         text-align: center;
     }
+    #sobremi .sobremi p{
+        color: #fff;
+        font-size:12px;
+        text-align: center;
+    }
+    #sobremi .sobremi h3{
+        text-align: center;
+    }
 
-   video{
-    display: none;
-   }
-   #tecnologias{
-    margin-top: 150%;
-   }
+    #sobremi .sobremi a{
+        
+        margin: auto;
+    }
+    video{
+        display: none;
+    }
+
+   //CONTACTO
    #contacto{
     padding: 50px 15px;
    }
@@ -120,3 +93,6 @@
     margin-bottom: 15px;
    }
 }
+
+
+
