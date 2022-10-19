@@ -1,32 +1,58 @@
-#portfolio{
+#sobremi{
+   max-width: 1100px;
+   margin: auto;
+   padding: 100px 15px;
+   color: #111135;
+   display: flex;
+}
+
+// video{
+//     width:100%;
+//     justify-content: center;
+//     align-items: center;
+//     height: fit-content;
+//     z-index: -1;
+//     background-size: cover;
+
+// }
+
+#sobremi .contenedor-foto{
+    max-width: 300px;
+    margin-right: 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.mifoto{
+    padding: 15px;
     width: 100%;
     height: 100%;
+    
+    // border-radius: 200px;
+    background-color: #8fe95b;
+    transition: all .3s ease-in-out;
+    object-fit: cover;
+  
+}
+.mifoto:hover{
+    transform: scale(1.4) ;
+    padding: 50px 45px;
+    border-radius: 200px;
+    transition: all .2s ease-in-out;
 }
 
-
-
-video{
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    z-index: -1;
-    background-size: cover;
-   
-}
-#portfolio .portfolio{
-    width: 100%;
-    height: 100%;
-    margin-top: auto;
-    right: 0;
-    position: absolute;
-    text-align: center;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-#portfolio .portfolio .titulo-seccion{
+// #sobremi .sobremi{
+//     width: 100%;
+//     height: 100%;
+//     margin-top: auto;
+//     right: 0;
+//     position: absolute;
+//     text-align: center;
+//     z-index: 1;
+//     justify-content: center;
+//     align-items: center;
+// }
+#sobremi .sobremi .titulo-seccion{
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
@@ -36,18 +62,18 @@ video{
     margin-top: 100px;
 }
 
-#portfolio .portfolio h2{
-   
+#sobremi .sobremi h2{
+
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
-    letter-spacing: 2px;   
+    letter-spacing: 2px;
 }
-#portfolio .portfolio h2 span{
+#sobremi .sobremi h2 span{
     color: $color2;
 }
 
-#portfolio .portfolio h3{
+#sobremi .sobremi h3{
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -55,14 +81,14 @@ video{
     letter-spacing: 1px;
 }
 
-#portfolio .portfolio p{
+#sobremi .sobremi p{
     font-size: 14px;
     line-height: 25px;
     color: #000;
     margin-bottom: 12px;
 }
 
-#portfolio .portfolio a{
+#sobremi .sobremi a{
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -73,7 +99,8 @@ video{
     transition: .5s;
 }
 
-#portfolio .portfolio a:hover{
+#sobremi .sobremi a:hover{
     background-color: $color1;
     color: $color2;
 }
+

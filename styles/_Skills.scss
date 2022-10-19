@@ -27,7 +27,7 @@
     margin:0 5px;
     border-right: 5px;
 }
-img{
+#tecnologias .stack .contenedor .tech img{
     width: 150px;
     height: 150px;
    
@@ -36,7 +36,7 @@ img{
     
 }
 
-img:hover{
+#tecnologias .stack .contenedor .tech img:hover{
     filter: grayscale(0%);
     transition: all 0.3s ease-in-out;
 }
@@ -79,7 +79,7 @@ img:hover{
     .contenedor{
         width: 1024px;
     }
-    img{
+    #tecnologias .stack .contenedor .tech img{
         width: 150px;
         height: 150px;
         filter: grayscale(100%);
@@ -98,7 +98,7 @@ img:hover{
     .contenedor{
         width: 1200px;
     }
-    img{
+    #tecnologias .stack .contenedor .tech img{
         width: 150px;
         height: 150px;
         filter: grayscale(100%);
