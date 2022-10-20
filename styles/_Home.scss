@@ -1,11 +1,6 @@
-#inicio{
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pond5.com/blue-programming-code-background-abstract-footage-090894338_prevstill.jpeg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
 //HEADER
-#inicio .contenido header{
+// #inicio .contenido header
+header{ 
     background-color: (rgba(0,0,0, .99));
     width: 100%;
     position: fixed;
@@ -18,7 +13,8 @@
    
 }
 
-#inicio .contenido header .contenido-header{
+// #inicio .contenido header
+.contenido-header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -28,13 +24,15 @@
    
 }
 
-#inicio .contenido header .contenido-header nav ul{
+// #inicio .contenido header
+.contenido-header nav ul{
     list-style: none;
     display: flex;
     align-items: right;
     padding-top:10px ;
 }
-#inicio .contenido header .contenido-header nav ul li a{
+// #inicio .contenido header 
+.contenido-header nav ul li a{
     text-decoration: none;
     color: #fff;
     margin: 0 12px;
@@ -44,7 +42,8 @@
     
 }
 
-#inicio .contenido header .contenido-header nav ul a:hover{
+// #inicio .contenido header 
+.contenido-header nav ul a:hover{
     color: $color2;
 }
 #inicio .contenido .presentacion{

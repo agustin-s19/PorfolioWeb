@@ -3,7 +3,7 @@
     margin: auto;
     display:flex;
     padding: 0 15px 100px 0;
- 
+    height: 100vh;
 }
 
 video{
@@ -23,14 +23,17 @@ video{
     box-sizing: border-box;
     overflow: hidden;
     padding: 40px 20px 40px 30px;
+    margin: auto;
+    
+    
 
 }
 #sobremi .contenedor-foto .mifoto{
    
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-    border-radius: 10px;
-    background-color: #f3f3f3;
+    border-radius: 200px;
+    // background-color: #f3f3f3;
     // width: 100%;
     transition: all .3s ease-in-out;
     margin-top: 4rem;
@@ -45,25 +48,26 @@ video{
 }
 
 #sobremi .sobremi{
-    margin: 0 40px;
+    margin: auto;
+    margin-left: 40px;
     // padding-bottom: 2%;
 }
 #sobremi .sobremi .titulo-seccion{
     font-size: 22px;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: underline;
     text-decoration-color: #000;
     text-decoration-thickness:5px;
     margin-top: 7rem;
 }
 
 #sobremi .sobremi h2{
-
+    color: #f3f3f3;
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
+
 }
 #sobremi .sobremi h2 span{
     color: $color2;
@@ -75,14 +79,14 @@ video{
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    
+    color: #f3f3f3;
 }
 
 #sobremi .sobremi p{
     font-size: 14px;
     text-transform: initial;
     line-height: 25px;
-    color: rgb(184, 200, 201);
+    color: #fff;
     margin-bottom: 12px;
 }
 

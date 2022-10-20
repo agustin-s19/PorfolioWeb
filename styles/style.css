@@ -12,14 +12,7 @@ a {
   text-decoration: none;
 }
 
-#inicio {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.pond5.com/blue-programming-code-background-abstract-footage-090894338_prevstill.jpeg");
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
-
-#inicio .contenido header {
+header {
   background-color: rgba(0, 0, 0, 0.99);
   width: 100%;
   position: fixed;
@@ -30,7 +23,7 @@ a {
   text-align: center;
 }
 
-#inicio .contenido header .contenido-header {
+.contenido-header {
   max-width: 1100px;
   margin: auto;
   display: flex;
@@ -39,14 +32,14 @@ a {
   padding: 10px 20px;
 }
 
-#inicio .contenido header .contenido-header nav ul {
+.contenido-header nav ul {
   list-style: none;
   display: flex;
   align-items: right;
   padding-top: 10px;
 }
 
-#inicio .contenido header .contenido-header nav ul li a {
+.contenido-header nav ul li a {
   text-decoration: none;
   color: #fff;
   margin: 0 12px;
@@ -54,7 +47,7 @@ a {
   transition: 0.5s;
 }
 
-#inicio .contenido header .contenido-header nav ul a:hover {
+.contenido-header nav ul a:hover {
   color: #0FFE00;
 }
 
@@ -199,6 +192,7 @@ a {
   margin: auto;
   display: flex;
   padding: 0 15px 100px 0;
+  height: 100vh;
 }
 
 video {
@@ -216,13 +210,13 @@ video {
   box-sizing: border-box;
   overflow: hidden;
   padding: 40px 20px 40px 30px;
+  margin: auto;
 }
 
 #sobremi .contenedor-foto .mifoto {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
-  border-radius: 10px;
-  background-color: #f3f3f3;
+  border-radius: 200px;
   transition: all 0.3s ease-in-out;
   margin-top: 4rem;
 }
@@ -233,20 +227,21 @@ video {
 }
 
 #sobremi .sobremi {
-  margin: 0 40px;
+  margin: auto;
+  margin-left: 40px;
 }
 
 #sobremi .sobremi .titulo-seccion {
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
-  text-decoration: underline;
   text-decoration-color: #000;
   text-decoration-thickness: 5px;
   margin-top: 7rem;
 }
 
 #sobremi .sobremi h2 {
+  color: #f3f3f3;
   font-size: 34px;
   font-weight: bold;
   margin: 20px 0;
@@ -263,13 +258,14 @@ video {
   text-transform: uppercase;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  color: #f3f3f3;
 }
 
 #sobremi .sobremi p {
   font-size: 14px;
   text-transform: initial;
   line-height: 25px;
-  color: rgb(184, 200, 201);
+  color: #fff;
   margin-bottom: 12px;
 }
 
@@ -300,7 +296,6 @@ video {
   justify-content: center;
   margin: 10px;
   font-size: 22px;
-  text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
 }
@@ -430,7 +425,6 @@ video {
   font-size: 22px;
   text-transform: uppercase;
   color: #d3d3d3;
-  text-decoration: underline;
   text-decoration-color: #000;
   text-decoration-thickness: 5px;
 }
@@ -457,6 +451,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 30px 0;
+}
+
+footer i {
+  font-size: 40px;
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
