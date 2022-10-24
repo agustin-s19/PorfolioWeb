@@ -362,14 +362,18 @@ video {
 #tecnologias .stack .contenedor .tech img {
   width: 150px;
   height: 150px;
-  transition: all 0.3s ease-in-out;
 }
 
 #tecnologias .stack .contenedor .tech .foto15 {
   width: 170px;
   height: 150px;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+}
+
+#tecnologias .stack .contenedor .tech .foto15:hover {
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
 }
 
 #tecnologias .stack .contenedor .tech img:hover {
@@ -507,6 +511,11 @@ footer {
 footer i {
   font-size: 40px;
   margin-left: 1rem;
+}
+
+footer i:hover {
+  color: #0FFE00;
+  transition: all 0.5s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

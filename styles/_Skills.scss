@@ -2,7 +2,7 @@
    padding: 100px 15px;
    text-align: center;
    background-color: #f3f3f3;
-//    height: 100vh;
+
 }
 #tecnologias h3{
     text-align: center;
@@ -30,20 +30,17 @@
 #tecnologias .stack .contenedor .tech img{
     width: 150px;
     height: 150px;
-   
-    transition: all 0.3s ease-in-out;
-    
-    
 }
 #tecnologias .stack .contenedor .tech .foto15{
     width: 170px;
     height: 150px;
     align-items: center;
-    transition: all 0.3s ease-in-out;
-    
-    
 }
-
+#tecnologias .stack .contenedor .tech .foto15:hover{
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
 
 
 #tecnologias .stack .contenedor .tech img:hover{
